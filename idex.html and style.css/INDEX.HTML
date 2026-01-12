@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Facebook – Sign up</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f0f2f5;
+}
+
+/* facebook logo */
+.logo{
+    text-align:center;
+    color:#1877f2;
+    font-size:40px;
+    font-weight:bold;
+    margin:30px 0 10px;
+}
+
+/* main card */
+.container{
+    width:400px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+
+.container h2{
+    margin:0;
+    font-size:24px;
+}
+
+.sub{
+    color:#606770;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+hr{
+    border:0;
+    height:1px;
+    background:#ddd;
+}
+
+/* inputs */
+input, select{
+    width:100%;
+    padding:10px;
+    margin:6px 0;
+    border:1px solid #ccd0d5;
+    border-radius:5px;
+    font-size:15px;
+    background:#f5f6f7;
+}
+
+.row{
+    display:flex;
+    gap:8px;
+}
+
+label{
+    font-size:12px;
+    color:#606770;
+}
+
+/* gender */
+.gender{
+    display:flex;
+    gap:8px;
+    margin:5px 0;
+}
+
+.gender div{
+    flex:1;
+    border:1px solid #ccd0d5;
+    border-radius:5px;
+    padding:8px;
+    font-size:14px;
+}
+
+/* text */
+.small{
+    font-size:11px;
+    color:#777;
+    margin:8px 0;
+}
+
+/* button */
+button{
+    background:#42b72a;
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    border:none;
+    padding:10px;
+    width:100%;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.login{
+    text-align:center;
+    margin-top:10px;
+}
+
+.login a{
+    text-decoration:none;
+    color:#1877f2;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo">facebook</div>
+
+<div class="container">
+    <h2>Create a new account</h2>
+    <div class="sub">It's quick and easy.</div>
+    <hr>
+
+    <div class="row">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Surname">
+    </div>
+
+    <label>Date of birth</label>
+    <div class="row">
+        <select><option>8</option></select>
+        <select><option>Jan</option></select>
+        <select><option>2026</option></select>
+    </div>
+
+    <label>Gender</label>
+    <div class="gender">
+        <div><input type="radio"> Female</div>
+        <div><input type="radio"> Male</div>
+        <div><input type="radio"> Custom</div>
+    </div>
+
+    <input type="text" placeholder="Mobile number or email address">
+    <input type="password" placeholder="New password">
+
+    <div class="small">
+        By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.
+    </div>
+
+    <button>Sign Up</button>
+
+    <div class="login">
+        <a href="#">Already have an account?</a>
+    </div>
+</div>
+
+</body>
+</html>
